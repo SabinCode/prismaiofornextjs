@@ -1,6 +1,8 @@
 import prisma from "@/db"
 import Link from "next/link"
 import CreateUser from "./create-user"
+import DeleteUser from "./delete-user"
+import React from "react"
 
 const Users = async () => {
     // const posts = await prisma.post.findMany()
@@ -52,6 +54,7 @@ const Users = async () => {
             ))}
 
             <CreateUser />
+            <DeleteUser />
 
         </>
     )
